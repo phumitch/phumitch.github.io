@@ -15,35 +15,29 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <title>phumitch </title>
+    <title>phumitch</title>
     <style>
         body {
             margin: 0;
-            font-family: Arial;
-            font-size: 18px;
-            background-color: black;
             font-family: "Kanit", sans-serif;
+            background-color: black;
         }
-        
+
         #myVideo {
             position: fixed;
             min-width: 100%;
             min-height: 100%;
-            -webkit-filter: blur(5px);
-            -moz-filter: blur(5px);
-            -o-filter: blur(5px);
-            -ms-filter: blur(5px);
             filter: blur(5px);
         }
-        
+
         .img-content {
             color: #fff;
-            position: absolute !important;
+            position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
-        
+
         .ml13 {
             font-size: 2em;
             text-transform: uppercase;
@@ -51,12 +45,7 @@
             font-weight: 600;
             color: rgb(255, 255, 255);
         }
-        
-        .ml13 .letter {
-            display: inline-block;
-            line-height: 1em;
-        }
-        
+
         .content-social {
             position: fixed;
             bottom: 0;
@@ -64,101 +53,101 @@
             width: 100%;
             padding: 20px;
         }
-        
-        .btn-check:focus+.btn,
-        .btn:focus {
-            outline: 0;
-            box-shadow: none;
+
+        .btn-custom {
+            background-color: #7289da80; /* Discord color */
+            color: white;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+
+        .btn-custom:hover {
+            background-color: #75b1ffcc; /* Darker shade for hover */
+        }
+
+        .join-discord {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1; /* Ensure it's above other content */
         }
     </style>
 </head>
 
 <body id="body" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
-    <div class="content">
-        <img id="myVideo" src="https://i.pinimg.com/originals/26/fd/49/26fd49fa54b204fbaf6301efefd53ae2.gif">
-        <div class="text-center img-content">
+    <div class="content" style="text-align: center; max-width: 100%; margin: 0 auto;">
+        <img id="myVideo" src="https://i.pinimg.com/originals/26/fd/49/26fd49fa54b204fbaf6301efefd53ae2.gif" style="display: block; max-width: 100%; height: auto; margin: 0 auto;">
+        <div class="text-center img-content" style="padding: 10px;">
             <img style="
-        width: 100px;
-        border-radius: 100%;
-        -webkit-animation-name: hvr-bob-float, hvr-bob;
-        animation-name: hvr-bob-float, hvr-bob;
-        -webkit-animation-duration: .3s, 1.5s;
-        animation-duration: .3s, 1.5s;
-        -webkit-animation-delay: 0s, .3s;
-        animation-delay: 0s, .3s;
-        -webkit-animation-timing-function: ease-out, ease-in-out;
-        animation-timing-function: ease-out, ease-in-out;
-        -webkit-animation-iteration-count: 1, infinite;
-        animation-iteration-count: 1, infinite;
-        -webkit-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
-        -webkit-animation-direction: normal, alternate;
-        animation-direction: normal, alternate;" src="https://i.ibb.co/zmTSDqD/IMG-20241020-003214.jpg" alt="MY BIO">
+                width: 200px;
+                border-radius: 100%;
+                animation: hvr-bob-float 1.5s infinite alternate;
+                " src="https://scontent.futp2-1.fna.fbcdn.net/v/t39.30808-6/345917334_1906381453073693_3166492776839308255_n.jpg" alt="My BIO">
             <div>
                 <h1 class="ml13">
-                    <span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);">phumitch</span>
-                    <span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);">discord</span>
-                    <span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);"></span>
-                    <span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);"></span>
-                    <span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);"></span>
-                    <span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);"></span>
-                    <span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);"></span>
-                    <span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);"></span>
-                    <span class="letter" style="opacity: 1; transform: translateY(0px) translateZ(0px);"></span>
+                    <span class="letter">phumitch</span>
+                    <span class="letter">discord</span>
                 </h1>
-                
             </div>
 
             <div>
-                <center data-aos="fade-up" data-aos-delay="800" data-aos-duration="500" class="aos-init aos-animate">
+                <center data-aos="fade-up" data-aos-delay="800" data-aos-duration="500">
                     <hr style="width: 14%; height: 5px; margin-top: 10px;">
                 </center>
-                <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="500" class="aos-init aos-animate">
-                    <span class="txt-rotate" data-period="2000" data-rotate="[&quot;DISCORD: phumitch&quot;,&quot;phumitch | สนใจทำปกกดไอคอนdiscordมาเลย &quot;, &quot;THAILAND: บริการทำปก&quot;]" '=""><span class="wrap">http</span></span>
+                <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="500">
+                    <span class="txt-rotate" data-period="2000" data-rotate="[&quot;DISCORD: phumitch&quot;,&quot;phumitch | สนใจทำปกกดไอคอนdiscordมาเลย &quot;, &quot;THAILAND: บริการทำปก&quot;]"><span class="wrap">http</span></span>
+                </div>
             </div>
         </div>
     </div>
 
+    <div class="join-discord">
+        <a href="https://discord.gg/AfkR4a5T7g" target="_blank" class="btn btn-custom">Join My Discord</a>
+    </div>
 
     <div class="content-social">
         <div>
             <a href="https://github.com/phumitch" target="_blank" class="btn hvr-buzz"><i class="bi bi-github" style="color:white;font-size:2rem;"></i></a>
-				<a href="https://www.facebook.com/phumitchsomsri" target="_blank" class="btn hvr-buzz"><i class="bi bi-facebook" style="color:white;font-size:2rem;"></i></a>
-				<a href="https://discord.gg/gsUMMfPe" target="_blank" class="btn hvr-buzz"><i class="bi bi-discord" style="color:white;font-size:2rem;"></i></a>
-				<a href="https://www.youtube.com/@phxmitch_" target="_blank" class="btn hvr-buzz"><i class="bi bi-youtube" style="color:white;font-size:2rem;"></i></a>
+            <a href="https://www.facebook.com/phumitchsomsri" target="_blank" class="btn hvr-buzz"><i class="bi bi-facebook" style="color:white;font-size:2rem;"></i></a>
+            <a href="https://discord.gg/AfkR4a5T7g" target="_blank" class="btn hvr-buzz"><i class="bi bi-discord" style="color:white;font-size:2rem;"></i></a>
+            <a href="https://www.youtube.com/@phxmitch_" target="_blank" class="btn hvr-buzz"><i class="bi bi-youtube" style="color:white;font-size:2rem;"></i></a>
         </div>
-    </div>
     </div>
 
     <script>
-    $("#body").click(function() {
-        var audio = new Audio('https://cdn.pixabay.com/audio/2023/07/30/audio_e0908e8569.mp3');   
-    if (isPlaying) {
-        audio.play();
-        isPlaying = true;
-    } else {
-        audio.pause();
-        audio.currentTime = 0; // รีเซ็ตเพลงไปที่จุดเริ่มต้น
-        isPlaying = false;;
-        audio.volume = 0.001 
-    }
+        $("#body").click(function() {
+            var audio = new Audio('https://cdn.pixabay.com/audio/2023/07/30/audio_e0908e8569.mp3');
+            if (isPlaying) {
+                audio.play();
+                isPlaying = true;
+            } else {
+                audio.pause();
+                audio.currentTime = 0;
+                isPlaying = false;
+                audio.volume = 0.001;
+            }
         });
         AOS.init();
-        var textWrapper = document.querySelector('.ml13 ');
-        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter '>$&</span>");
+        var textWrapper = document.querySelector('.ml13');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
         anime.timeline({
-                loop: false
-            })
-            .add({
-                targets: '.ml13 .letter ',
-                translateY: [100, 0],
-                translateZ: 0,
-                opacity: [0, 1],
-                easing: "easeOutExpo",
-                duration: 1400,
-                delay: (el, i) => 300 + 30 * i
-            })
+            loop: false
+        })
+        .add({
+            targets: '.ml13 .letter',
+            translateY: [100, 0],
+            translateZ: 0,
+            opacity: [0, 1],
+            easing: "easeOutExpo",
+            duration: 1400,
+            delay: (el, i) => 300 + 30 * i
+        });
+
         var TxtRotate = function(el, toRotate, period) {
             this.toRotate = toRotate;
             this.el = el;
@@ -167,32 +156,60 @@
             this.txt = ' ';
             this.tick();
             this.isDeleting = false;
-
         };
 
         TxtRotate.prototype.tick = function() {
             var i = this.loopNum % this.toRotate.length;
             var fullTxt = this.toRotate[i];
 
-
             if (this.isDeleting) {
                 this.txt = fullTxt.substring(0, this.txt.length - 1);
-
             } else {
                 this.txt = fullTxt.substring(0, this.txt.length + 1);
-
             }
 
-            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>'; var that = this; var delta = 300 - Math.random() * 100; if (this.isDeleting) { delta /= 2; } if (!this.isDeleting && this.txt === fullTxt) { delta = this.period;
-                    this.isDeleting = true; } else if (this.isDeleting && this.txt === '') { this.isDeleting = false; this.loopNum++; delta = 500; } setTimeout(function() { that.tick(); }, delta); }; window.onload = function() { var elements = document.getElementsByClassName('txt-rotate');
-                    for (var i = 0; i
-                    < elements.length; i++) { var toRotate=elements[i].getAttribute( 'data-rotate'); var period=elements[i].getAttribute( 'data-period'); if (toRotate) { new TxtRotate(elements[i], JSON.parse(toRotate), period); } } var css=document.createElement( "style");
-                        css.type="text/css" ; css.innerHTML=".txt-rotate > .wrap { border-right: 0.08em solid #666 }" ; document.body.appendChild(css); }; </script>
+            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+            var that = this;
+            var delta = 300 - Math.random() * 100;
 
+            if (this.isDeleting) {
+                delta /= 2;
+            }
 
-                        <style type="text/css">
-                            .txt-rotate>.wrap {
-                                border-right: 0.08em solid #666
-                            }
-                        </style>
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
+
+            setTimeout(function() {
+                that.tick();
+            }, delta);
+        };
+
+        window.onload = function() {
+            var elements = document.getElementsByClassName('txt-rotate');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-rotate');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtRotate(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+            document.body.appendChild(css);
+        };
+    </script>
+
+    <style type="text/css">
+        .txt-rotate > .wrap {
+            border-right: 0.08em solid #666;
+        }
+    </style>
 </body>
+</html>
