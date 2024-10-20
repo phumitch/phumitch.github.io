@@ -68,12 +68,38 @@
         }
 
         .join-discord {
-            position: absolute;
-            top: 70%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 1; /* Ensure it's above other content */
-        }
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column; /* Default to vertical stacking */
+    align-items: center; /* Center buttons */
+    z-index: 1; /* Ensure it's above other content */
+}
+
+.btn-custom {
+    width: 100%; /* Make buttons full width in vertical layout */
+    max-width: 200px; /* Optional: set a max width */
+    margin: 10px 0; /* Add vertical margin between buttons */
+    text-align: center; /* Center text inside buttons */
+}
+
+/* Media query for desktop */
+@media (min-width: 768px) {
+    .join-discord {
+        flex-direction: row; /* Change to horizontal layout on larger screens */
+        justify-content: center; /* Center buttons horizontally */
+    }
+
+    .btn-custom {
+        width: auto; /* Reset width for horizontal layout */
+        margin: 0 10px; /* Add horizontal margin between buttons */
+    }
+}
+
+
+
     </style>
 </head>
 <body id="body" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
@@ -114,6 +140,7 @@
             <a href="https://www.facebook.com/phumitchsomsri" target="_blank" class="btn hvr-buzz"><i class="bi bi-facebook" style="color:white;font-size:2rem;"></i></a>
             <a href="https://discord.gg/AfkR4a5T7g" target="_blank" class="btn hvr-buzz"><i class="bi bi-discord" style="color:white;font-size:2rem;"></i></a>
             <a href="https://www.youtube.com/@phxmitch_" target="_blank" class="btn hvr-buzz"><i class="bi bi-youtube" style="color:white;font-size:2rem;"></i></a>
+            <a href="https://www.instagram.com/p_phumitch" target="_blank" class="btn hvr-buzz"><i class="bi bi-instagram" style="color:white;font-size:2rem;"></i></a>
         </div>
     </div>
 

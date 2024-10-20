@@ -69,12 +69,36 @@
         }
 
         .join-discord {
-            position: absolute;
-            top: 70%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 1; /* Ensure it's above other content */
-        }
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column; /* Default to vertical stacking */
+    align-items: center; /* Center buttons */
+    z-index: 1; /* Ensure it's above other content */
+}
+
+.btn-custom {
+    width: 110%; /* Make buttons full width in vertical layout */
+    max-width: 400px; /* Optional: set a max width */
+    margin: 10px 0; /* Add vertical margin between buttons */
+    text-align: center; /* Center text inside buttons */
+}
+
+/* Media query for desktop */
+@media (min-width: 768px) {
+    .join-discord {
+        flex-direction: row; /* Change to horizontal layout on larger screens */
+        justify-content: center; /* Center buttons horizontally */
+    }
+
+    .btn-custom {
+        width: auto; /* Reset width for horizontal layout */
+        margin: 0 10px; /* Add horizontal margin between buttons */
+    }
+}
+
     </style>
 </head>
 
